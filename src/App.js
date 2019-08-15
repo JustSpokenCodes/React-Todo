@@ -70,7 +70,6 @@ class App extends React.Component {
   };
 
   render() {
-
     if(this.state.things.length < 1) {
       return (
         <div className='App'>
