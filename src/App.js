@@ -38,7 +38,7 @@ class App extends React.Component {
     let newTodo = {
       task: todo,
       id: Date.now(),
-      completed: false
+      completed: true
     };
     const sorted = [...this.state.things, newTodo].sort(function(a, b) {
       let taskA = a.task.toUpperCase();
@@ -100,7 +100,7 @@ class App extends React.Component {
         </div>
       </div>
     );
+  }
 }
-  
 
 export default App;
